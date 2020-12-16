@@ -11,7 +11,7 @@ const App = () => {
         <div className={"App"}>
             <h2>Webstorm Key Fetcher</h2>
             <button className={"Button"} onClick={pageChange}>Hello</button>
-            <iframe id="webstorm-key" src="https://blog.cpming.top/p/jetbrains-ide-activation-code"
+            <iframe id="webstorm-key" title={"Webstorm Key"} src="https://blog.cpming.top/p/jetbrains-ide-activation-code"
                     style={{width: 500, height: 200}}/>
         </div>
     );
