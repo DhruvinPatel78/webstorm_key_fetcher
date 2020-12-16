@@ -5,6 +5,7 @@ const App = () => {
     const pageChange = () => {
         let iframe = document.getElementById("webstorm-key");
         window.alert(iframe.contentWindow.document.querySelector('div:nth-child(26) > pre > code').innerText);
+        console.log(iframe.contentWindow.document.querySelector('div:nth-child(26) > pre > code').innerText)
     }
 
     return (
