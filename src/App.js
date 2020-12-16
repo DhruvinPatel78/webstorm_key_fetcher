@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+
+    const pageChange = () => {
+        let iframe = document.getElementById("webstorm-key");
+        window.alert(iframe.contentWindow.document.querySelector('div:nth-child(26) > pre > code').innerText);
+    }
+
+    return (
+        <div className={"App"}>
+            <h2>Webstorm Key Fetcher</h2>
+            <button className={"Button"} onClick={pageChange}>Hello</button>
+            <iframe id="webstorm-key" src="https://blog.cpming.top/p/jetbrains-ide-activation-code"
+                    style={{width: 500, height: 200}}/>
+        </div>
+    );
 }
 
 export default App;
